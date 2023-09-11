@@ -15,8 +15,9 @@ export const config: CodeceptJS.MainConfig = {
   helpers: {
     Playwright: {
       browser: 'chromium',
-      url: 'https://www.saucedemo.com/',
-      show: true
+      url: '',
+      show: true,
+      fullPageScreenshots: true
     }
   },
   include: {
@@ -27,6 +28,8 @@ export const config: CodeceptJS.MainConfig = {
     checkoutPage: "./pages/checkout.ts",
     itemViewPage: "./pages/itemView.ts",
     headerPage: "./pages/headerPage.ts",
+    productsPagePage: "./pages/productsPage.ts",
+    headerPagePage: "./pages/headerPage.ts",
   },
   name: 'codeceptJS'
 }
